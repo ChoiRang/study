@@ -1,4 +1,4 @@
-from  encore.addr.service import AddrService
+from encore.addr.service import AddrService
 
 # menu
 class Menu:
@@ -7,18 +7,20 @@ class Menu:
 
 	def run(self):
 		while True:
-			check = input('1. 추가, 2. 검색, 3. 수정, 4. 삭제, 5. 전체출력, 6. 종료')
+			check = input('1. 추가, 2. 번호로 검색, 3. 이름으로 검색, 4. 수정, 5. 삭제, 6. 전체출력, 7. 종료')
 			if check == '1':
 				self.service.add_addr()
 			elif check == '2':
-				self.service.print_addr()
+				self.service.get_by_num()
 			elif check == '3':
-				self.service.modify_addr()
+				self.service.get_by_name()
 			elif check == '4':
-				self.service.del_addr()
+				self.service.modify_addr()
 			elif check == '5':
 				self.service.print_all()
 			elif check == '6':
+				self.service.print_all()
+			elif check == '7':
 				break
 			else:
 				print('없는 매뉴번호 입니다.')

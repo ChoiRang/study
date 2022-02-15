@@ -10,9 +10,9 @@ Original file is located at
 """
 
 # 코랩 한글 적용
-!sudo apt-get install -y fonts-nanum
-!sudo fc-cache -fv
-!rm ~/.cache/matplotlib -rf
+# !sudo apt-get install -y fonts-nanum
+# !sudo fc-cache -fv
+# !rm ~/.cache/matplotlib -rf
 
 import numpy as np
 import pandas as pd
