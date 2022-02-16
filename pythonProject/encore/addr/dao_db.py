@@ -61,12 +61,12 @@ class AddrDaoDB:
 			self.disconnect()
 
 	# 수정 메서드
-	def update_addr(self, num: int, name, tel, addr):
+	def update_addr(self, addr):
 		try:
 			self.connect()
 			cursor = self.conn.cursor()
 			sql = 'update address set name = %s, tel = %s, addr = %s where num = %s'
-			d = (tel, name, addr, num)
+			d = (addr.tel, addr.name, addr.num)
 			cursor.execute(sql, d)
 			self.conn.commit()
 		except Exception as e:

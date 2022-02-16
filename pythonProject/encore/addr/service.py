@@ -59,7 +59,7 @@ class AddrService:
 			s = ['new name: ', 'new tel: ', 'new address: ']
 			for i in range(0, len(data)):
 				data.append(input(s[i]))
-			for idx, i in data:
+			for idx, i in enumerate(data):
 				if i != '':
 					addr.__setattr__(s[idx], i)
 			self.dao.update_addr(addr)
