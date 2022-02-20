@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h4>내 정보</h4>
+        아이디: {{user_vo.id}}<br>
+        이름: {{user_vo.name}}<br>
+        이메일: {{user_vo.email}}<br>
+        <button type="submit" onclick="location.href='/member/modify/{{user_vo.id}}'">내 정보 수정</button>
+        <button type="submit" onclick="location.href='/member/resign/{{user_vo.id}}'">회원 탈퇴</button>
+        <button type="submit" onclick="location.href='/'">뒤로 가기</button>
+    </body>
+</html>
