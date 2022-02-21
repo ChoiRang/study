@@ -2,6 +2,7 @@ import encore.movie.vo as vo
 import requests
 import json
 
+
 class BoxOffService:
     def __init__(self):
         self.url='http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?'

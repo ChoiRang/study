@@ -1,11 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 from encore.web_practice1.bus_info.bus_vo import BusVo, Station
+from encore.web_practice1.bus_info.bus_dao import BusDao
 
 
 class BusService:
 	def __init__(self):
 		self.key = '0o1h3rwXg2ba8nhNfKw6gI%2Bnuoln2ZsGWGvk3AoS4KLLQwgfu4xkKYi9Q2z9jpE%2BuJA%2FMMUAUEBBTCxhMpfEJQ%3D%3D'
+		self.dao = BusDao()
 
 	def get_bus_info_by_name(self, bus_code):
 		url = 'http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList?'
@@ -75,3 +77,7 @@ class BusService:
 			)
 
 		return res
+
+	def generate_bus_member(self, bus_id, bus_name, user_id):
+		check = self.dao.insert_info(bus_id, bus_name, user_id)
+		return check

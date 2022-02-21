@@ -7,9 +7,17 @@
     <body>
         {% if session.flag == True %}
             <h3>hello, {{session.login_id}}</h3>
-            <form action="/bus/bus_info/{{session.login_id}}" method="post">
+            <form action="/bus/bus_info" method="post">
                 검색할 버스번호: <input type="text" name="busnm">
-                <input type="submit" value="검색">
+                <input type="submit" value="검색"><br>
+                {% if search_fail == True%}
+                    없는 버스번호 입니다.
+                {% endif %}
+                {% if confirm == 0%}
+                    이미 등록한 버스입니다.
+                {% elif confirm == 1 %}
+                    버스를 등록했습니다.
+                {% endif %}
             </form>
             <button type="submit" onclick="location.href='/member/my_info/{{session.login_id}}'">내 정보 보기</button>
             <button type="submit" onclick="location.href='/member/logout'">로그 아웃</button>
