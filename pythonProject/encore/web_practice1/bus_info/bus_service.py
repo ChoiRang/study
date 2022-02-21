@@ -78,6 +78,9 @@ class BusService:
 
 		return res
 
-	def generate_bus_member(self, bus_id, bus_name, user_id):
-		check = self.dao.insert_info(bus_id, bus_name, user_id)
-		return check
+	def generate_bus_member(self, user_id, bus_name, bus_id):
+		bus_vo = self.get_bus_info_by_name(bus_name)
+		return self.dao.insert_info(user_id, bus_vo, bus_id)
+
+	def get_my_bus(self, user_id):
+		return self.dao.select_by_user_id(user_id)

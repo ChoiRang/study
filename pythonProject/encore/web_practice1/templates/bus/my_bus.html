@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h3>등록된 버스목록</h3>
+        <table border="1">
+            <tr>
+                <th>버스 id</th>
+                <th>버스명</th>
+                <th>기점</th>
+                <th>종점</th>
+                <th>첫차 시간</th>
+                <th>막차 시간</th>
+                <th>배차 간격</th>
+            </tr>
+            {% for bus in res %}
+                <tr>
+                    <th>
+                         <a href="/bus/station_info/{{bus.bus_code}}">
+                        {{bus.bus_code}}
+                        </a>
+                    </th>
+                    <th>{{bus.bus_route_name}}</th>
+                    <td>{{bus.start_station}}</td>
+                    <td>{{bus.end_station}}</td>
+                    <td>{{bus.start_time}}</td>
+                    <td>{{bus.end_time}}</td>
+                    <td>{{bus.term}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

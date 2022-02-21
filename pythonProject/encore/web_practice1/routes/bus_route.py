@@ -24,9 +24,14 @@ def station_info(bus_id):
 
 @bp.get('/generate_bus')
 def generate_bus_member():
-	bus_id = request.args['bus_id']
-	bus_name = request.args['bus_name']
 	user_id = request.args['user_id']
-	confirm = bus_service.generate_bus_member(bus_id, bus_name, user_id)
-	print(confirm)
+	bus_name = request.args['bus_name']
+	bus_id = request.args['bus_id']
+	confirm = bus_service.generate_bus_member(user_id, bus_name, bus_id)
 	return render_template('index.html', confirm=confirm)
+
+
+@bp.get('/my_bus_list/<string:user_id>')
+def my_bus_list(user_id):
+	res = bus_service.get_my_bus(user_id)
+	return render_template('bus/my_bus.html', res=res)

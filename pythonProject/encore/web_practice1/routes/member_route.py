@@ -1,4 +1,4 @@
-from flask import Blueprint, request, render_template, session
+from flask import Blueprint, request, render_template, session, redirect
 from encore.web_practice1.member.member_service import MemberService
 from encore.web_practice1.member.member_vo import MemberVo
 
@@ -32,16 +32,18 @@ def login():
 	pwd = request.form['pwd']
 	login_check = service.login(id, pwd)
 	if login_check is None:
+		session['flag'] = False
 		msg = '없는 아이디'
 	else:
 		session['flag'] = True
 		session['login_id'] = id
 		msg = '로그인 정상 처리'
-	return render_template('member/result.html', msg=msg)
+	return render_template('index.html', msg=msg)
 
 
 @bp.get('/logout')
 def logout():
+	# session.pop('login_id')
 	session.clear()
 	session['flag'] = False
 	return render_template('index.html')
@@ -49,6 +51,7 @@ def logout():
 
 @bp.get('/my_info/<string:user_id>')
 def my_info(user_id):
+	# user_id = session['login_id']
 	user_vo = service.get_my_info(user_id)
 	return render_template('member/info.html', user_vo=user_vo)
 
@@ -74,4 +77,4 @@ def resign_user(user_id):
 	service.resign_user(user_id)
 	session.clear()
 	session['flag'] = False
-	return render_template('index.html')
+	return redirect('/')

@@ -20,12 +20,14 @@
                 {% endif %}
             </form>
             <button type="submit" onclick="location.href='/member/my_info/{{session.login_id}}'">내 정보 보기</button>
+            <button type="submit" onclick="location.href='/bus/my_bus_list//{{session.login_id}}'">버스 목록</button>
             <button type="submit" onclick="location.href='/member/logout'">로그 아웃</button>
         {% endif %}
         {% if session.flag == False %}
             <h3>게스트 입니다</h3>
             <a href="/member/join">회원 가입</a>
-            <a href="/member/login">로그인</a>
+            <a href="/member/login">로그인</a><br>
+            {{msg}}
         {% endif %}
     </body>
 </html>

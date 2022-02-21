@@ -6,7 +6,7 @@
     </head>
     <body>
         <h3>버스 노선 검색 결과</h3>
-        <table>
+        <table border="1">
             <tr>
                 <th>버스 id</th>
                 <th>이름</th>
@@ -15,6 +15,7 @@
                 <th>첫차 시간</th>
                 <th>막차 시간</th>
                 <th>배차 간격</th>
+                <th>관심 버스</th>
             </tr>
             {% for b in res %}
                 <tr>
@@ -27,11 +28,15 @@
                     <td>{{b.start_time}}</td>
                     <td>{{b.end_time}}</td>
                     <td>{{b.term}}</td>
-                    <td>
-                        <button type="submit" onclick="location.href='/bus/generate_bus?bus_id={{b.bus_code}}&bus_name={{b.bus_route_name}}&user_id={{session.login_id}}'">
-                            자주 사용하는 버스 등록하기
-                        </button>
-                    </td>
+                    {% if session.flag%}
+                        <td>
+                            <button type="submit" onclick="location.href='/bus/generate_bus?user_id={{session.login_id}}&bus_name={{b.bus_route_name}}&bus_id={{b.bus_code}}'">
+                                관심 버스 등록
+                            </button>
+                        </td>
+                    {% else %}
+                    -
+                    {% endif %}
                 </tr>
             {% endfor %}
         </table>
