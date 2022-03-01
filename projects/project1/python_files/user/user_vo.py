@@ -1,5 +1,5 @@
 class UserVo:
-	def __init__(self, user_index=None, user_id=None, user_password=None, nick_name=None):
+	def __init__(self, user_index=0, user_id=None, user_password=None, nick_name=None):
 		self.user_index = user_index
 		self.user_id = user_id
 		self.user_password = user_password

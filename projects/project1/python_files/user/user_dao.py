@@ -1,5 +1,5 @@
 import pymysql
-from static.python_files.user.user_vo import UserVo
+from python_files.user.user_vo import UserVo
 
 class UserDao:
 	def __init__(self):
@@ -38,3 +38,18 @@ class UserDao:
 			print(e)
 		finally:
 			self.disconnection()
+
+	def check_user_password(self, user_id, user_password):
+		try:
+			user_vo = self.select_by_user_id(user_id)
+			if user_vo is None:
+				return
+			else:
+				if user_vo.user_password == user_password:
+					return user_vo
+				else:
+					return
+		except Exception as e:
+			print(e)
+
+

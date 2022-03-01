@@ -1,0 +1,31 @@
+/*@charset "UTF-8";*/
+
+h1 {
+    color: slategrey;
+}
+
+.float_side {
+    position: fixed;
+    display: inline-block;
+    top: 10%;
+}
+
+.bd-navbar {
+    border: 3px solid black;
+}
+
+.top-nav-bar {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.error_msg {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin: 9px 0 -2px;
+}
+
+.green {
+    color: green;
+}
