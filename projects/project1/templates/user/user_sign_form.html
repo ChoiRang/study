@@ -28,14 +28,15 @@
 <body>
 <div class="container">
     <div class="row top-nav-bar">
-        <nav class="bd-navbar py-2" aria-label="First navigation">
-            <div class="container-xxl d-flex align-items-md-center">
-                <form class="bd-search position-relative me-auto">
-                    <span>
-                        <input type="search" class="form-control ds-input" id="search-input">
-                    </span>
-                </form>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="First navigation">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item float-right">
+                    <a class="nav-link" href="/apt/main">아파트</a>
+                </li>
+            </ul>
         </nav>
     </div>
     <div class="row">
@@ -79,7 +80,7 @@
                     {% else %}
                         <button type="button" class="btn btn-secondary">유저 등록하기</button>
                     {% endif %}
-                    <button type="submit" class="btn btn-secondary" formaction="/">뒤로 가기</button>
+                    <button type="submit" class="btn btn-secondary" formaction="/" formmethod="get">뒤로 가기</button>
                 </form>
             </div>
         </div>

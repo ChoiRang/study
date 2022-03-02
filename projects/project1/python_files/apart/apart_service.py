@@ -1,6 +1,5 @@
 from python_files.keys import keys
 from bs4 import BeautifulSoup
-from python_files.apart.apart_vo import ApartVo
 import requests
 
 

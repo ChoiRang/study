@@ -9,6 +9,7 @@ bp = Blueprint('apt', __name__, url_prefix='/apt')
 extract = ExtractLegalCode()
 apart_service = ApartService()
 
+
 @bp.get('/main')
 def apt_main_form():
 	local1 = extract.extract_local()
@@ -23,6 +24,7 @@ def get_info(local):
 
 @bp.post('/generate')
 def get_api():
+	local1 = extract.extract_local()
 	local_first = request.form['local_first']
 	local_second = request.form['local_second']
 	date = request.form['date']
@@ -37,4 +39,4 @@ def get_api():
 		return render_template('welcome.html', msg=msg)
 	else:
 		print('success')
-		return render_template('welcome.html', apt_info=apart_df, search=True, length=length)
+		return render_template('apt/apt_form.html', apt_info=apart_df, search=True, length=length, local=local1)
