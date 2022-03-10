@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function changeDetectionFirst() {
+            let selectOption = document.getElementById("select_first");
+            let selectSave = selectOption.options[selectOption.selectedIndex].value;
+            document.getElementById('select_second').innerHTML = null;
+            let data = JSON.parse("{{ local }}".replace(/&#39;/gi, "\""));
+
+            console.log(data[selectSave]);
+            let secondEl = document.getElementById("select_second");
+            for (let text of data[selectSave]) {
+                secondEl.options[secondEl.options.length] = new Option(text, text);
+            }
+        }
+    </script>
+</head>
+<body>
+<h3>중고차 차량 가격 알아보기!</h3>
+<form action="used_car_info" method="post">
+    year:<input type="number" name="year"><br>
+    mileage:<input type="number" name="mileage"><br>
+    tax:<input type="number" name="tax"><br>
+    mpg:<input type="number" name="mpg"><br>
+    brand
+    <select id="select_first">
+        <option selected>브랜드</option>
+        
+    </select>
+</form>
+</body>
+</html>
