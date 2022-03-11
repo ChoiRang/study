@@ -1,0 +1,240 @@
+hyundi,vauxhall,audi,vw,skoda,merc,toyota,bmw,ford
+"[{' Santa Fe': array([{'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' I40': array([{'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' IX20': array([{'Automatic': array(['Petrol'], dtype=object)},
+        {'Manual': array(['Petrol', 'Diesel'], dtype=object)}],
+       dtype=object)}
+ {' IX35': array([{'Manual': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' I800': array([{'Automatic': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Getz': array([{'Automatic': array(['Petrol'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)}], dtype=object)}]","[{' GTC': array([{'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' Vivaro': array([{'Manual': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Antara': array([{'Manual': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Combo Life': array([{'Manual': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' Agila': array([{'Manual': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' Zafira Tourer': array([{'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol', 'Diesel'], dtype=object)}],
+       dtype=object)}                                                            ]","[{' RS4': array([{'Automatic': array(['Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' S3': array([{'Manual': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' A8': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' RS6': array([{'Semi-Auto': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' Q8': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' SQ7': array([{'Automatic': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' A7': array([{'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' RS5': array([{'Automatic': array(['Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' RS3': array([{'Automatic': array(['Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' SQ5': array([{'Automatic': array(['Petrol', 'Diesel'], dtype=object)}],
+       dtype=object)}
+ {' S4': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' R8': array([{'Semi-Auto': array(['Petrol'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}]","[{' Scirocco': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' Caravelle': array([{'Automatic': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Arteon': array([{'Semi-Auto': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel', 'Petrol', 'Other'], dtype=object)}],
+       dtype=object)}
+ {' Shuttle': array([{'Manual': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Amarok': array([{'Manual': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Beetle': array([{'Manual': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' CC': array([{'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' Caddy Maxi Life': array([{'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' California': array([{'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Tiguan Allspace': array([{'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' Caddy Life': array([{'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Jetta': array([{'Manual': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Caddy': array([{'Automatic': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Eos': array([{'Manual': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}]","[{' Scala': array([{'Semi-Auto': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Manual': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Other': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' Yeti': array([{'Semi-Auto': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol', 'Other', 'Diesel'], dtype=object)}],
+       dtype=object)}
+ {' Kamiq': array([{'Semi-Auto': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Manual': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Automatic': array(['Petrol', 'Other', 'Diesel'], dtype=object)}],
+       dtype=object)}
+ {' Rapid': array([{'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' Roomster': array([{'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)}], dtype=object)}     ]","[{' V Class': array([{'Automatic': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' CLS Class': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' GL Class': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' S Class': array([{'Automatic': array(['Diesel', 'Hybrid', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol', 'Hybrid'], dtype=object)}],
+       dtype=object)}
+ {' SLK': array([{'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)},
+        {'Other': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' CLA Class': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' M Class': array([{'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' X-CLASS': array([{'Automatic': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' G Class': array([{'Semi-Auto': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Automatic': array(['Petrol', 'Diesel'], dtype=object)}],
+       dtype=object)}
+ {' GLS Class': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol', 'Diesel'], dtype=object)}],
+       dtype=object)}
+ {' GLB Class': array([{'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' CLK': array([{'Automatic': array(['Petrol', 'Diesel'], dtype=object)}],
+       dtype=object)}                                                      ]","[{' Prius': array([{'Automatic': array(['Hybrid', 'Other'], dtype=object)},
+        {'Manual': array(['Other'], dtype=object)}], dtype=object)}
+ {' Camry': array([{'Automatic': array(['Hybrid'], dtype=object)}], dtype=object)}
+ {' Land Cruiser': array([{'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Verso': array([{'Semi-Auto': array(['Petrol'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Other', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' Avensis': array([{'Automatic': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol', 'Diesel'], dtype=object)}],
+       dtype=object)}
+ {' GT86': array([{'Manual': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' Hilux': array([{'Automatic': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Supra': array([{'Automatic': array(['Petrol', 'Other'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' PROACE VERSO': array([{'Automatic': array(['Diesel'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' IQ': array([{'Automatic': array(['Petrol'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)}], dtype=object)}]","[{' M4': array([{'Semi-Auto': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' 6 Series': array([{'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' i3': array([{'Automatic': array(['Hybrid', 'Other', 'Electric'], dtype=object)}],
+       dtype=object)}
+ {' X4': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Manual': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' i8': array([{'Automatic': array(['Hybrid', 'Other'], dtype=object)}],
+       dtype=object)}
+ {' X6': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' M2': array([{'Semi-Auto': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' X7': array([{'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' 7 Series': array([{'Automatic': array(['Diesel', 'Petrol', 'Hybrid'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol', 'Hybrid'], dtype=object)}],
+       dtype=object)}
+ {' Z4': array([{'Automatic': array(['Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' M5': array([{'Automatic': array(['Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' 8 Series': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' M6': array([{'Semi-Auto': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' M3': array([{'Semi-Auto': array(['Petrol'], dtype=object)},
+        {'Manual': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' Z3': array([{'Manual': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}]","[{' KA': array([{'Manual': array(['Petrol', 'Diesel'], dtype=object)}],
+       dtype=object)}
+ {' Galaxy': array([{'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' Puma': array([{'Manual': array(['Petrol', 'Hybrid'], dtype=object)}],
+       dtype=object)}
+ {' Edge': array([{'Manual': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Mustang': array([{'Manual': array(['Petrol'], dtype=object)},
+        {'Semi-Auto': array(['Petrol'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}
+ {' Grand Tourneo Connect': array([{'Manual': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Tourneo Connect': array([{'Automatic': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Manual': array(['Diesel', 'Petrol'], dtype=object)}],
+       dtype=object)}
+ {' Grand C-MAX': array([{'Manual': array(['Diesel', 'Petrol'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)},
+        {'Semi-Auto': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Tourneo Custom': array([{'Manual': array(['Diesel'], dtype=object)},
+        {'Automatic': array(['Diesel'], dtype=object)}], dtype=object)}
+ {' Fusion': array([{'Manual': array(['Petrol', 'Diesel'], dtype=object)},
+        {'Automatic': array(['Petrol'], dtype=object)}], dtype=object)}   ]"
