@@ -38,3 +38,6 @@ out/
 
 ### python ###
 keys.py
+
+### others ###
+*.csv
