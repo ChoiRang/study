@@ -8,4 +8,4 @@ def solution(price, money, count):
         return abs(answer)
     else:
         return 0
-    
+# check
