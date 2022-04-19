@@ -22,7 +22,7 @@ def solution(N, road, K):
 		start, end, distance = i
 		path[start].append([end, distance])
 		path[end].append([start, distance])
-
+	print(path)
 	dist = dijkstra(each_dist, path)
 	print(dist)
 	return len([i for i in dist if i <= K])
