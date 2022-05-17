@@ -18,15 +18,7 @@ class ApartService:
 			print(msg)
 			return
 		route_list = bs.find_all('item')
-		res = {}
-		list1 = []
-		list2 = []
-		list3 = []
-		list4 = []
-		list5 = []
-		list6 = []
-		list7 = []
-		list8 = []
+		apt_list = []
 		for apt_info in route_list:
 			dong = apt_info.find('법정동').text
 			apart_name = apt_info.find('아파트').text
@@ -36,22 +28,7 @@ class ApartService:
 			year = apt_info.find('년').text
 			month = apt_info.find('월').text
 			day = apt_info.find('일').text
-			list1.append(dong)
-			list2.append(apart_name)
-			list3.append(build_year)
-			list4.append(trade_value)
-			list5.append(apart_area)
-			list6.append(year)
-			list7.append(month)
-			list8.append(day)
-		res['dong'] = list1
-		res['apart_name'] = list2
-		res['build_year'] = list3
-		res['trade_value'] = list4
-		res['apart_area'] = list5
-		res['year'] = list6
-		res['month'] = list7
-		res['day'] = list8
+			apt_list.append([dong, apart_name, build_year, trade_value, apart_area, year, month, day])
 
-		return res
+		return apt_list
 

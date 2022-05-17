@@ -30,13 +30,11 @@ def get_api():
 	date = request.form['date']
 	date = str(date)
 	legal_code = extract.extract_local_code(local_first, local_second)
-	res = apart_service.get_apt(legal_code, date)
-	apart_df = pd.DataFrame(res)			# dict -> dataframe
-	length = len(apart_df)
-	if res is None:
+	apt_info_list = apart_service.get_apt(legal_code, date)
+	length = len(apt_info_list)
+	if apt_info_list is None:
 		msg = '정보를 다시 입력해 주세요'
-		print(msg)
 		return render_template('welcome.html', msg=msg)
 	else:
 		print('success')
-		return render_template('apt/apt_form.html', apt_info=apart_df, search=True, length=length, local=local1)
+		return render_template('apt/apt_form.html', apt_info=apt_info_list, search=True, length=length, local=local1)

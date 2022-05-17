@@ -1,4 +1,14 @@
 /*@charset "UTF-8";*/
+@font-face {
+    font-family: 'GangwonEdu_OTFLightA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GangwonEdu_OTFLightA', serif;
+}
 
 h1 {
     color: slategrey;

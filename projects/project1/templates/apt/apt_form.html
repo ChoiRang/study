@@ -48,7 +48,7 @@
                 {% endif %}
             </div>
         </div>
-        <div class="center-content col-md-8 gap-4">
+        <div class="center-content col-md-8 gap-4 mt-4">
             <form action="/apt/generate" method="post">
                 <div class="form-group row">
                     <select class="form-select form-select-sm w-25 form-group" id="local_first" name="local_first"
@@ -87,13 +87,13 @@
                     </tr>
                     </thead>
                     <tbody>
-                    {% for x in range(0, length) %}
+                    {% for apt in apt_info %}
                         <tr>
-                            <td>{{ apt_info.iloc[x]['dong'] }}</td>
-                            <td>{{ apt_info.iloc[x]['apart_name'] }}</td>
-                            <td>{{ apt_info.iloc[x]['trade_value'] }}</td>
-                            <td>{{ apt_info.iloc[x]['apart_area'] }}</td>
-                            <td>{{ apt_info.iloc[x]['day'] }}</td>
+                            <td>{{ apt[0] }}</td>
+                            <td>{{ apt[1] }}</td>
+                            <td>{{ apt[3] }}</td>
+                            <td>{{ apt[4] }}</td>
+                            <td>{{ apt[7] }}</td>
                         </tr>
                     {% endfor %}
                     </tbody>
