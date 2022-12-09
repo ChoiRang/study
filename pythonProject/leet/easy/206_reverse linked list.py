@@ -9,11 +9,19 @@ class ListNode:
 
 
 class Solution:
-	def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-		node, prev = head, None
+	def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+		if left == right:
+			return head
 
-		while node:
-			next, node.next = node.next, prev
-			node, prev = next, node
+		root = start = ListNode()
+		root.next = head
 
-		return prev
+		for _ in range(left - 1):
+			start = start.next
+
+		end = start.next
+		for _ in range(right - left):
+			tmp, start.next, end.next = start.next, end.next, end.next.next
+			start.next.next = tmp
+
+		return root.next
