@@ -13,12 +13,12 @@ class Solution:
 
 			for idx, num in enumerate(nums):
 				if idx not in idx_list:
-					per_num_pre, idx_list_pre = per_num[:], idx_list[:]
+					per_num_prev, idx_list_prev = per_num[:], idx_list[:]
 					per_num.append(num)
 					idx_list.append(idx)
 
 					dfs(idx_list, per_num, count + 1)
-					idx_list, per_num = idx_list_pre, per_num_pre
+					idx_list, per_num = idx_list_prev, per_num_prev
 
 		dfs([], [], 0)
 
