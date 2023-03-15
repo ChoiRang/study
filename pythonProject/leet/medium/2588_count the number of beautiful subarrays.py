@@ -13,7 +13,7 @@ class Solution:
 			count += seen[current]
 			seen[current] += 1
 
-		return count8
+		return count
 
 
 """
