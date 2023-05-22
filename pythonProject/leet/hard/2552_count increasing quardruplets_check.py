@@ -2,50 +2,74 @@ import itertools
 from typing import *
 
 
-# time limit
-class Solution1:
-    def countQuadruplets(self, nums: List[int]) -> int:
-        # i, j, k. l
-        # l> j> k> i
-        count = 0
-        each_list = itertools.combinations(nums, 4)
-        for num in each_list:
-            if num[3] > num[1]:
-                if num[1] > num[2]:
-                    if num[2] > num[0]:
-                        count += 1
-        return count
+class Solution:
+	def countQuadruplets(self, nums: List[int]) -> int:
+		N = len(nums)
+		count = 0
+		dp = [0] * N
+		for j in range(N):
+			prev = 0
+			for i in range(j):
+				if nums[j] > nums[i]:
+					prev += 1
+					count += dp[i]
+				elif nums[j] < nums[i]:
+					dp[i] += prev
+
+		return count
 
 
-# time limit
+"""
+# i< j< k< l
+# l> j> k> i
+# dp[j] = (i<j<k)->nums[i]<nums[k]<nums[j]
+"""
+
+
+# TLE
 class Solution2:
-    def countQuadruplets(self, nums: List[int]) -> int:
-        N = len(nums)
-        count = 0
-        jk_list = []
+	def countQuadruplets(self, nums: List[int]) -> int:
+		N = len(nums)
+		count = 0
+		jk_list = []
 
-        for j in range(1, N - 2):
-            for k in range(j + 1, N - 1):
-                if nums[j] > nums[k]:
-                    jk_list.append([j, k, nums[j], nums[k]])
+		for j in range(1, N - 2):
+			for k in range(j + 1, N - 1):
+				if nums[j] > nums[k]:
+					jk_list.append([j, k, nums[j], nums[k]])
 
-        for jk in jk_list:
-            for l in range(jk[1] + 1, N):
-                for i in range(jk[0]):
-                    if nums[l] > jk[2] and nums[i] < jk[3]:
-                        count += 1
-        """
-        같은 코드, 5번 타임오버
-        for j in range(1, N - 2):
-            for k in range(j + 1, N - 1):
-                if nums[j] > nums[k]:
-                    for l in range(k+1, N):
-                        if nums[l] > nums[j]:
-                            for i in range(j):
-                                if nums[i] < nums[k]:
-                                    count += 1
-        """
-        return count
+		for jk in jk_list:
+			for l in range(jk[1] + 1, N):
+				for i in range(jk[0]):
+					if nums[l] > jk[2] and nums[i] < jk[3]:
+						count += 1
+		"""
+		같은 코드, 5번 타임오버
+		for j in range(1, N - 2):
+				for k in range(j + 1, N - 1):
+						if nums[j] > nums[k]:
+								for l in range(k+1, N):
+										if nums[l] > nums[j]:
+												for i in range(j):
+														if nums[i] < nums[k]:
+																count += 1
+		"""
+		return count
+
+
+# TLE
+class Solution1:
+	def countQuadruplets(self, nums: List[int]) -> int:
+		# i, j, k. l
+		# l> j> k> i
+		count = 0
+		each_list = itertools.combinations(nums, 4)
+		for num in each_list:
+			if num[3] > num[1]:
+				if num[1] > num[2]:
+					if num[2] > num[0]:
+						count += 1
+		return count
 
 
 """
