@@ -21,7 +21,7 @@ class Solution:
 				elif right and 0 < curr_hp < right[-1][1]:
 					right[-1][1] -= 1
 					curr_hp = 0
-g
+					
 				if curr_hp:
 					left.append([i, curr_hp])
 		res = left + right
