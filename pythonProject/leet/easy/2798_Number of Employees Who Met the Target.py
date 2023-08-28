@@ -7,4 +7,4 @@ class Solution:
 		for hour in hours:
 			if hour >= target:
 				res += 1
-		return r
+		return res
