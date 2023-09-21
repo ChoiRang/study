@@ -1,3 +1,6 @@
+from typing import *
+
+
 class Solution:
 	def minOperations(self, nums: List[int], x: int) -> int:
 		total = sum(nums)
@@ -23,5 +26,3 @@ class Solution:
 				res = min(res, n - (right - left))
 
 		return -1 if res > n else res
-
-
