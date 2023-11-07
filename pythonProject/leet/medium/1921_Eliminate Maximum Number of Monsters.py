@@ -1,7 +1,7 @@
 from typing import *
 
 
-# REF ( O(2n) )
+# REF ( O(nlogn) )
 class Solution:
 	def eliminateMaximum(self, dist: List[int], speed: List[int]) -> int:
 		res = 0
@@ -17,7 +17,7 @@ class Solution:
 		return res
 
 
-# TLE ( O(n ** 2) )
+# TLE ( O(n^2) )
 class Solution1:
 	def eliminateMaximum(self, dist: List[int], speed: List[int]) -> int:
 		n = len(dist)
