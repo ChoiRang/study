@@ -42,3 +42,6 @@ keys.py
 ### others ###
 *.csv
 dataset/
+
+.DS_Store
+
